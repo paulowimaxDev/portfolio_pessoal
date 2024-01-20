@@ -1,0 +1,129 @@
+/* Importa as fontes 'Krona One' e 'Montserrat' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Zera as margens e preenchimentos padrões para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Configurações gerais para o corpo (body) da página */
+body {
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    box-sizing: border-box; /* Inclui a borda no cálculo de largura e altura */
+    background-color: #000000; /* Define a cor de fundo como preto */
+    color: #F6F6F6; /* Define a cor do texto como um tom de branco */
+}
+
+/* Estilo específico para elementos com a classe 'titulo-destaque' */
+.titulo-destaque {
+    color:#22D4FD; /* Define a cor do texto como azul claro */
+}
+
+/* Estilo para a seção de apresentação */
+.apresentacao {
+    margin: 10%; /* Define a margem como 10% do tamanho da viewport */
+    display: flex; /* Ativa o modelo de layout flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal */
+}
+
+/* Estilo para o conteúdo dentro da seção de apresentação */
+.apresentacao__conteudo {
+    width: 615px; /* Define a largura máxima do conteúdo como 615 pixels */
+    display: flex; /* Ativa o modelo de layout flexbox */
+    flex-direction: column; /* Coloca os itens em coluna */
+    gap: 40px; /* Define o espaçamento entre os elementos como 40 pixels */
+}
+
+/* Estilo para o título dentro do conteúdo da apresentação */
+.apresentacao__conteudo__titulo {
+    font-size: 36px; /* Define o tamanho da fonte como 36 pixels */
+    font-family:'Krona One', sans-serif; /* Define a fonte como 'Krona One' */
+}
+
+/* Estilo para o texto dentro do conteúdo da apresentação */
+.apresentacao__conteudo__texto {
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte como 'Montserrat' */
+}
+
+/* Estilo para a seção de links dentro da apresentação */
+.apresentacao__links {
+    display: flex; /* Ativa o modelo de layout flexbox */
+    justify-content: space-between; /* Distribui os itens uniformemente ao longo do eixo principal */
+}
+
+/* Estilo para cada link dentro da seção de links */
+.apresentacao__links__link {
+    
+    background-color: #22D4FD; /* Define a cor de fundo como azul claro */
+    width: 280px; /* Define a largura máxima como 280 pixels */
+    padding: 21.5px 0; /* Define o preenchimento superior e inferior como 21.5 pixels, sem preenchimento lateral */
+    border-radius: 24px; /* Adiciona bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do link */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    font-weight: 600; /* Define a espessura da fonte como negrito */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte como 'Montserrat' */
+    text-decoration: none; /* Remove a decoração de texto (sublinhado) */
+    color: #000000; /* Define a cor do texto como preto */
+}
+a:hover {
+    background-color: #14caf3;
+}
+    /* Define (bordar-radius) da imagem do perfil e uma borda padrão solid */
+.apresentacao__foto_perfil {
+    width: 468px;
+    border-radius: 30px 10px;
+    border: solid 2px #22D4FD;  
+    margin: 0px 0px 0px 40px;
+}
+
+/* Estilos gerais para o corpo (body) da página */
+
+/* Restante do seu código CSS existente... */
+
+/* Media query para dispositivos móveis com largura máxima de 768 pixels */
+@media only screen and (max-width: 768px) {
+
+    /* Ajustes para a seção de apresentação em dispositivos móveis */
+    .apresentacao {
+        margin: 5%; /* Reduz a margem para 5% em dispositivos móveis */
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Ajustes para o conteúdo dentro da seção de apresentação em dispositivos móveis */
+    .apresentacao__conteudo {
+        width: 100%; /* Define a largura máxima como 100% */
+        gap: 20px; /* Reduz o espaçamento entre os elementos para 20 pixels */
+    }
+
+    /* Ajustes para o título dentro do conteúdo da apresentação em dispositivos móveis */
+    .apresentacao__conteudo__titulo {
+        font-size: 24px; /* Reduz o tamanho da fonte para 24 pixels */
+    }
+
+    /* Ajustes para o texto dentro do conteúdo da apresentação em dispositivos móveis */
+    .apresentacao__conteudo__texto {
+        font-size: 18px; /* Reduz o tamanho da fonte para 18 pixels */
+    }
+
+    /* Ajustes para a seção de links dentro da apresentação em dispositivos móveis */
+    .apresentacao__links {
+        flex-direction: column; /* Coloca os links em coluna */
+    }
+
+    /* Ajustes para cada link dentro da seção de links em dispositivos móveis */
+    .apresentacao__links__link {
+        width: 100%; /* Define a largura máxima como 100% */
+        margin-bottom: 10px; /* Adiciona um espaçamento inferior de 10 pixels entre os links */
+    }
+
+    /* Ajustes para a imagem do perfil em dispositivos móveis */
+    .apresentacao__foto_perfil {
+        width: 50%; /* Define a largura máxima como 100% */
+        margin: auto;
+
+    }
+}
